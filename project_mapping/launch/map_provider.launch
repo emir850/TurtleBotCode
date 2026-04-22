@@ -1,0 +1,4 @@
+<launch>
+  <!-- Launch the map_saver node to save the map -->
+  <node name="map_saver" pkg="map_server" type="map_saver" args="-f $(find project_mapping)/map/project_mapping_map.bag" />
+</launch>

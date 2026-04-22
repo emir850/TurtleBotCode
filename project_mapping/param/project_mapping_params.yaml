@@ -1,0 +1,30 @@
+map_update_interval: 2.0              # Interval between map updates
+maxUrange: 3.0                        # Maximum usable range for laser scan data
+particles: 100                        # Number of particles in the particle filter
+xmin: -10.0                           # Minimum x-coordinate of the map
+ymin: -10.0                           # Minimum y-coordinate of the map
+xmax: 10.0                            # Maximum x-coordinate of the map
+ymax: 10.0                            # Maximum y-coordinate of the map
+# All these values below just a default values that we referenced from the tutorial in ROS Navigation Course and Documents.
+sigma: 0.05                           # Standard deviation for laser range measurements
+kernelSize: 1                         # Size of the Gaussian kernel for smoothing
+lstep: 0.05                           # Linear step size for scan matching
+astep: 0.05                           # Angular step size for scan matching
+iterations: 5                         # Number of iterations for scan matching
+lsigma: 0.075                         # Standard deviation for linear displacement sampling
+ogain: 3.0                            # Gain for map updating based on laser scan data
+lskip: 0                              # Number of laser scans to skip between updates
+minimumScore: 50                      # Minimum score threshold for accepting a scan match
+srr: 0.1                              # Odometry error in rotation per rotation
+srt: 0.2                              # Odometry error in rotation per translation
+str: 0.1                              # Odometry error in translation per rotation
+stt: 0.2                              # Odometry error in translation per translation
+linearUpdate: 1.0                     # Linear distance threshold for map updates
+angularUpdate: 0.2                    # Angular distance threshold for map updates
+temporalUpdate: 0.5                   # Time threshold for map updates
+resampleThreshold: 0.5                # Resampling threshold for particle filter
+delta: 0.05                           # Resolution of the occupancy grid
+llsamplerange: 0.01                   # Linear displacement range for likelihood sampling
+llsamplestep: 0.01                    # Linear displacement step size for likelihood sampling
+lasamplerange: 0.005                  # Angular displacement range for likelihood sampling
+lasamplestep: 0.005                   # Angular displacement step size for likelihood sampling

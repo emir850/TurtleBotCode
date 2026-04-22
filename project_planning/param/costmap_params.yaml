@@ -1,0 +1,29 @@
+map_update_interval: 2.0              # specifies the interval between updates of the map, with a value of 2.0.
+maxUrange: 3.0                        # parameter determines the maximum usable range for laser scan data, set to 3.0.
+particles: 100                        # The particles parameter sets the number of particles in the particle filter to 100.
+xmin: -10.0                           # The xmin, ymin, xmax, and ymax parameters define the minimum and maximum
+ymin: -10.0                           
+xmax: 10.0                            
+ymax: 10.0                            
+sigma: 0.05                           # The sigma parameter represents the standard deviation for laser range measurements, with a value of 0.05.
+kernelSize: 1                         # Size of the Gaussian kernel for smoothing
+lstep: 0.05                           # The lstep and astep parameters specify the linear and angular step sizes for scan matching, both set to 0.05.
+astep: 0.05                           
+iterations: 5                         # The iterations parameter indicates the number of iterations for scan matching, with a value of 5.
+lsigma: 0.075                         # The lsigma parameter represents the standard deviation for linear displacement sampling, set to 0.075.
+ogain: 3.0                            # The ogain parameter determines the gain for map updating based on laser scan data, set to 3.0.
+lskip: 0                              # The lskip parameter defines the number of laser scans to skip between updates, set to 0.
+minimumScore: 50                      # The minimumScore parameter sets the minimum score threshold for accepting a scan match to 50.
+srr: 0.1                              
+srt: 0.2                             
+str: 0.1                              
+stt: 0.2                              
+linearUpdate: 1.0                     # Linear distance threshold for map updates
+angularUpdate: 0.2                    # Angular distance threshold for map updates
+temporalUpdate: 0.5                   # Time threshold for map updates
+resampleThreshold: 0.5                # Resampling threshold for particle filter
+delta: 0.05                           # Resolution of the occupancy grid
+llsamplerange: 0.01                   # The llsamplerange and llsamplestep parameters determine the linear displacement range and step size for likelihood sampling.
+llsamplestep: 0.01                   
+lasamplerange: 0.005                  # The lasamplerange and lasamplestep parameters define the angular displacement range and step size for likelihood sampling.
+lasamplestep: 0.005                   
